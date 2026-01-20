@@ -2,7 +2,7 @@
 
 import { Box, keyframes, Theme, Typography } from "@mui/material";
 import { FC, useState } from "react";
-import Video from "next-video";
+import Player from "next-video/player";
 import OAKD5Img from "../../../../public/OAK_D_5.webp";
 import Image from "next/image";
 import { TextStaggeredFade } from "../../basic/animatation/TextStaggeredFade";
@@ -34,7 +34,7 @@ const OAKHero: FC = () => {
           zIndex: 0,
         }}
       >
-        <Video
+        <Player
           src="/hero-background.mp4"
           autoPlay
           loop
